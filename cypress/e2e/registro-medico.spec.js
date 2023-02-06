@@ -190,7 +190,7 @@ describe('Test de Registro medico', () => {
     it('Test Registro medico correcto', ()=>{
         cy.get('ion-select[formcontrolname="nacionalidad"]').click()
         cy.wait(250);
-        cy.get('#alert-input-1-0 > .alert-button-inner > .alert-radio-label').click()
+        cy.get('#alert-input-1-1 > .alert-button-inner > .alert-radio-label').click()
         cy.wait(250);
         cy.get('button.alert-button').contains('OK').click()
 
@@ -203,14 +203,14 @@ describe('Test de Registro medico', () => {
         
         cy.get('form').within(() => {
             cy.get('ion-input[formcontrolname="nombre"]').type('Nombre test')
-            cy.get('ion-input[formcontrolname="email"]').type('test@test.com')
+            cy.get('ion-input[formcontrolname="email"]').type('test1244@test.com')
             cy.get('ion-input[formcontrolname="password"]').type('123456')
             cy.get('ion-input[formcontrolname="passwordConfirmation"]').type('123456')
 
             cy.get('input[id="file"]').invoke('show');
             cy.wait(250)
-            cy.get('input[id="file"]').selectFile('FitzpatrickSkinType.pdf');
-
+            cy.get('input[id="file"]').selectFile('DirectorioMedico.pdf');
+            cy.wait(1000)
         });
         cy.wait(250)
         cy.get('.alert-button').click()
@@ -219,7 +219,7 @@ describe('Test de Registro medico', () => {
         cy.wait(250);
         cy.get('ion-button[id="register-button"]').click()
        
-        cy.wait(1000);
+        cy.wait(5000);
         cy.url().should('eq', 'http://localhost:8100/login')
     });
   })
