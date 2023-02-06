@@ -72,11 +72,11 @@ describe('Test de Login', () => {
 
     it('Test login correcto', ()=>{
         cy.get('form').within(() => {
-            cy.get('ion-input[formcontrolname="email"]').type('test@test.com')
-            cy.get('ion-input[formcontrolname="password"]').type('123456')
+            cy.get('ion-input[formcontrolname="email"]').type('oe.cortes@uniandes.edu.co')
+            cy.get('ion-input[formcontrolname="password"]').type('123123')
             cy.get('ion-button[id="login-button"]').click()
         })
-        cy.wait(1000)
+        cy.wait(5000)
         cy.url().should('eq', 'http://localhost:8100/inicio')
     });
   })
