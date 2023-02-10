@@ -4,6 +4,8 @@
         "login":"http://localhost:8100/login",
         "inicio":"http://localhost:8100/inicio",
         "casosMedicos":"http://localhost:8100/casos-medicos",
-        "registro":"http://localhost:8100/registro-medico"
+        "registro":"http://localhost:8100/registro-medico",
+        "detalleConsulta":"http://localhost:8100/detalle-consulta"
+
     }
 }
