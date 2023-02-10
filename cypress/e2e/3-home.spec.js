@@ -1,3 +1,5 @@
+const expectedData = require("../fixtures/expect-data.json")
+
 describe('Test de Inicio', () => {
     beforeEach(()=>{
         cy.visit('inicio')
@@ -6,6 +8,6 @@ describe('Test de Inicio', () => {
     it('Test link de casos medicos', () => {
         cy.get('ion-button[id="casos-medicos-button"]').click()
         cy.wait(1000)
-        cy.url().should('eq', 'http://localhost:8100/casos-medicos')
+        cy.url().should('eq', expectedData.page.casosMedicos)
     })
   })

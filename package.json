@@ -5,6 +5,13 @@
     "@angular/common": "^15.1.2",
     "@angular/core": "^15.1.2",
     "@angular/platform-browser-dynamic": "^15.1.2",
+    "@faker-js/faker": "^7.6.0",
     "cypress": "^12.4.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "scripts": {
+    "test":"node create_mock_data.js && cypress run --headless"
   }
 }
