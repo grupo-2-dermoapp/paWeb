@@ -38,6 +38,24 @@ function fillMockData (mockData){
     mockData.name.long= faker.random.alphaNumeric(61)
     mockData.name.good= faker.name.fullName({length:{max:60,min:6}})
 
+    //diagnostico
+    mockData.diagnostico ={}
+    mockData.diagnostico.short= faker.random.alphaNumeric(19)
+    mockData.diagnostico.long= faker.random.alphaNumeric(201)
+    mockData.diagnostico.good= faker.random.alphaNumeric(50)
+
+    //tratamiento
+    mockData.tratamiento ={}
+    mockData.tratamiento.short= faker.random.alphaNumeric(19)
+    mockData.tratamiento.long= faker.random.alphaNumeric(201)
+    mockData.tratamiento.good= faker.random.alphaNumeric(60)
+
+    //nombreLesion
+    mockData.nombreLesion ={}
+    mockData.nombreLesion.short= faker.random.alphaNumeric(5)
+    mockData.nombreLesion.long= faker.random.alphaNumeric(25)
+    mockData.nombreLesion.good= faker.random.alphaNumeric(15)
+
     writeMockData(mockData)
 
 }
