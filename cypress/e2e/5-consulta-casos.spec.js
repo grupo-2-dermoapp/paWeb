@@ -32,12 +32,12 @@ describe('Test de casos medicos',()=>{
             })
         })
         for(let i =2;i<=numberOfRows;i++){
-            cy.get(`.content-ltr > .ion-margin > :nth-child(${numberOfRows}) > :nth-child(4) > .md`).should('exist')
+            cy.get(`.content-ltr > .ion-margin > :nth-child(${numberOfRows}) > :nth-child(1) > .md`).should('exist')
         }
     });
 
     it('Click en boton seleccionar',()=>{
-        cy.get(`.content-ltr > .ion-margin > :nth-child(2) > :nth-child(4) > .md`).click()
+        cy.get(`.content-ltr > .ion-margin > :nth-child(2) > :nth-child(8) > .md`).click()
         cy.wait(250);
         cy.url().should('contain', expectedData.page.detalleConsulta)
     });
