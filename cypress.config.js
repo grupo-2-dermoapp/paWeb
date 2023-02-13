@@ -5,7 +5,7 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx}",
     baseUrl: 'http://localhost:8100',
-    //userAgent:'Mobile'
+    userAgent:'Mobile'
   },
 
   component: {
