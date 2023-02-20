@@ -4,7 +4,7 @@ const expectedData = require("../fixtures/expect-data.json")
 describe('Test de casos medicos',()=>{
 
     beforeEach(()=>{
-        cy.visit('login')
+        cy.visit('')
         cy.wait(250);
         cy.get('form').within(() => {
             cy.get('ion-input[formcontrolname="email"]').type(mockData.email.good)
@@ -12,8 +12,8 @@ describe('Test de casos medicos',()=>{
             cy.get('ion-button[id="login-button"]').click()
         })
         cy.wait(5000)
-        cy.visit('casos-medicos');
-        cy.wait(2500);
+        cy.get('ion-button[id="casos-medicos-button"]').click()
+        cy.wait(1000)
     });
 
     it('Existe por lo menos 1 caso medico',()=>{
