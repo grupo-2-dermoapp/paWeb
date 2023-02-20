@@ -1,11 +1,11 @@
 {
     "page":{
-        "registroMedico":"http://localhost:8100/registro-medico",
-        "login":"http://localhost:8100/login",
-        "inicio":"http://localhost:8100/inicio",
-        "casosMedicos":"http://localhost:8100/casos-medicos",
-        "registro":"http://localhost:8100/registro-medico",
-        "detalleConsulta":"http://localhost:8100/detalle-consulta"
+        "registroMedico":"https://grupo-2-dermoapp.github.io/frontend/registro-medico",
+        "login":"https://grupo-2-dermoapp.github.io/frontend/login",
+        "inicio":"https://grupo-2-dermoapp.github.io/frontend/inicio",
+        "casosMedicos":"https://grupo-2-dermoapp.github.io/frontend/casos-medicos",
+        "registro":"https://grupo-2-dermoapp.github.io/frontend/registro-medico",
+        "detalleConsulta":"https://grupo-2-dermoapp.github.io/frontend/detalle-consulta"
 
     }
 }

@@ -3,8 +3,10 @@ const expectedData = require("../fixtures/expect-data.json")
 
 describe('Test de Registro medico', () => {
     beforeEach(()=>{
-        cy.visit('registro-medico')
+        cy.visit('')
         cy.wait(250)
+        cy.get('#registro').click()
+        cy.wait(500)
     })
     it('Test formulario completo', () => {
         cy.get('ion-button[id="register-button"]').click()
@@ -23,6 +25,8 @@ describe('Test de Registro medico', () => {
             expect($divs.length).to.equal(1)
         });
     });
+
+    // create test of hiden field
     it('Test nombre minimo 4 caracteres', ()=>{
         cy.get('form').within(() => {
             cy.get('ion-input[formcontrolname="nombre"]').type(mockData.name.short)

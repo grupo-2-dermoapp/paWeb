@@ -4,7 +4,7 @@ const expectedData = require("../fixtures/expect-data.json")
 describe('Test de crear diagnostico',()=>{
 
     beforeEach(()=>{
-        cy.visit('login')
+        cy.visit('')
         cy.wait(250);
         cy.get('form').within(() => {
             cy.get('ion-input[formcontrolname="email"]').type(mockData.email.good)
@@ -13,7 +13,7 @@ describe('Test de crear diagnostico',()=>{
         })
         cy.wait(5000)
         cy.get('ion-button[id="casos-medicos-button"]').click()
-        cy.wait(250);
+        cy.wait(1000)
         cy.get(`.content-ltr > .ion-margin > :nth-child(2) > :nth-child(8) > .md`).click()
         cy.wait(2500);
     });
@@ -39,23 +39,6 @@ describe('Test de crear diagnostico',()=>{
 
     it('Formulario de diagnostico',()=>{
 
-        cy.get('form[id="consulta-form"]').within(() => {
-            cy.get('ion-button[id="aceptar-caso-button"]').click()
-        });
-        cy.wait(500);
-        cy.get('button.alert-button').contains('Aceptar').click()
-        cy.wait(500);
-
-        cy.get('form[id="diagnostico-form"]').within(() => {
-            cy.get('ion-button[id="crear-diagnostico-button"]').click()
-        });
-        cy.get('span').then(($divs)=>{
-            expect($divs.length).to.equal(3)
-        });
-    });
-
-    it('Formulario de diagnostico',()=>{
-        
         cy.get('form[id="consulta-form"]').within(() => {
             cy.get('ion-button[id="aceptar-caso-button"]').click()
         });

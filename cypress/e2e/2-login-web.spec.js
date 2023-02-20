@@ -3,7 +3,7 @@ const expectedData = require("../fixtures/expect-data.json")
 
 describe('Test de Login', () => {
     beforeEach(()=>{
-        cy.visit('login')
+        cy.visit('')
         cy.wait(500)
     })
    it('Test link de registro', () => {
