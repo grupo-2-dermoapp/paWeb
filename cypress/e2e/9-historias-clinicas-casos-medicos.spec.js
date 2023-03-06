@@ -30,11 +30,15 @@ describe('Test de filtrar historias clinicas',()=>{
         
     });
 
-    it('Debe existir por lo menos un caso',()=>{
-        cy.get('app-historias-clinicas').within(() => {
-            cy.get('.web-view > :nth-child(3) > :nth-child(1) > .button').should('exist')
-        })
-        
+     it('Debe existir por lo menos un caso',()=>{
+        cy.get('ion-button[id="caso-medico-1"]').should('exist')
+    })
+
+    it('El caso debe traer información',()=>{
+        cy.get('ion-button[id="caso-medico-1"]').click()
+        cy.wait(500)
+        cy.get('app-detalle-consulta').should('exist')
+        cy.url().should('contain', expectedData.page.detalleConsulta) 
     })
 
 });
