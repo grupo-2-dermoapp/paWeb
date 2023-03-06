@@ -1,1 +1,38 @@
-{"email":{"good":"gudrun_hegmann@hotmail.com","bad":"Tim Heathcote"},"password":{"short":"7y7uf","long":"19s35mjkos9ar0vni3h0waq6b","good":"zvt6ar4wkt0z","bad":"tlrwuv74byfs"},"name":{"short":"phl","long":"ab1f57x4kdnkw5lrkbgs6pqijo11f3e4h7e35yyx4z1se9ji50t2g43aayxsm","good":"Lauren Jakubowski"},"command":{"backspace":"{backspace}"},"file":{"registroMedico":"DirectorioMedico.pdf"}}
+{
+  "email": {
+    "good": "shyanne.herzog@yahoo.com",
+    "bad": "Jessie Okuneva"
+  },
+  "password": {
+    "short": "5wb5w",
+    "long": "1fxyd787s7ikjjsfcib48g92q",
+    "good": "6rexfa1fqotm",
+    "bad": "1rrae3uxb0c2"
+  },
+  "name": {
+    "short": "vfy",
+    "long": "k9j30v8amlc1x17fu5dp9noum4tdwdkyetgdgq03rw7ppz3amvwes9m5nc7rd",
+    "good": "Dwight Huel PhD"
+  },
+  "command": {
+    "backspace": "{backspace}"
+  },
+  "file": {
+    "registroMedico": "DirectorioMedico.pdf"
+  },
+  "diagnostico": {
+    "short": "753jjvspavhjgrwhgzd",
+    "long": "bc4bag9hvh0nbuo6vbj1fkr0sqqeztws4woj9x1ozaqnezpvaam2cxj4gc8b69zcs3ua9pwxya9a4kwmg37jhk6zv7q8af0pbd7nmejzqn3hcgfkuq4p32q536mhw8f383n8nq9eq4dtlwov9wzd42647j3hxuaj4058dfa9i5uh0ke9uj0jfvxmfm9xttj132p5ltddy",
+    "good": "ndvkz0gsahguiy9xy3fblgi94kveneatzlu2yhcm44zlpitw3b"
+  },
+  "tratamiento": {
+    "short": "7n63zrmdxne4xi9rsjg",
+    "long": "1mhme2sj10zaw3pvp9osklh0nw8y427b7c3ppb7nh50fne9m70js5le2gbhkrx0cb942qvh4upz80nyicpvzi4w45vv4bz2lnsulinz6f569k50bwl0q2zivrqtlndwlh01fxqebw2hku9shxvn8x1c2e6oxpsv59gs68c160n3p7hgwx56jwq56lu2lt24r4s9dvizkx",
+    "good": "6p1i6rblbd3w2lprwajluxvqbavyur9qvn30qnhhu1oegajdkgutjr4x4sj7"
+  },
+  "nombreLesion": {
+    "short": "na4ke",
+    "long": "edgplxcdmicg3f79pze3mglob",
+    "good": "f16ce7g6cwz93cm"
+  }
+}
