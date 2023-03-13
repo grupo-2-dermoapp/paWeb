@@ -1,11 +1,12 @@
 {
-    "page":{
-        "registroMedico":"https://grupo-2-dermoapp.github.io/frontend/registro-medico",
-        "login":"https://grupo-2-dermoapp.github.io/frontend/login",
-        "inicio":"https://grupo-2-dermoapp.github.io/frontend/inicio",
-        "casosMedicos":"https://grupo-2-dermoapp.github.io/frontend/casos-medicos",
-        "registro":"https://grupo-2-dermoapp.github.io/frontend/registro-medico",
-        "detalleConsulta":"https://grupo-2-dermoapp.github.io/frontend/detalle-consulta"
+  "page": {
+    "registroMedico": "https://grupo-2-dermoapp.github.io/frontend/registro-medico",
+    "login": "https://grupo-2-dermoapp.github.io/frontend/login",
+    "inicio": "https://grupo-2-dermoapp.github.io/frontend/inicio",
+    "casosMedicos": "https://grupo-2-dermoapp.github.io/frontend/casos-medicos",
+    "registro": "https://grupo-2-dermoapp.github.io/frontend/registro-medico",
+    "detalleConsulta": "https://grupo-2-dermoapp.github.io/frontend/detalle-consulta",
+    "consulta": "https://grupo-2-dermoapp.github.io/frontend/consulta"
 
-    }
+  }
 }
