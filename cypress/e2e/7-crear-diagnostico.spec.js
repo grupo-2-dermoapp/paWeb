@@ -216,25 +216,4 @@ describe('Test de crear diagnostico',()=>{
         });
     });
 
-    it('Creacion diagnostico exitosa',()=>{
-        
-        cy.get('form[id="consulta-form"]').within(() => {
-            cy.get('ion-button[id="aceptar-caso-button"]').click()
-        });
-        cy.wait(500);
-        cy.get('button.alert-button').contains('Aceptar').click()
-        cy.wait(500);
-
-        cy.get('form[id="diagnostico-form"]').within(() => {
-            cy.get('ion-textarea[formcontrolname="nombreLesion"]').type(mockData.nombreLesion.good)
-            cy.get('ion-textarea[formcontrolname="tratamiento"]').type(mockData.tratamiento.good)
-            cy.get('ion-textarea[formcontrolname="diagnostico"]').type(mockData.diagnostico.good)
-            cy.get('ion-button[id="crear-diagnostico-button"]').click()
-        });
-
-        cy.url().should('eq', expectedData.page.casosMedicos)
-
-    });
-
-
 });

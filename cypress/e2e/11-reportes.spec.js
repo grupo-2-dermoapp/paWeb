@@ -25,8 +25,12 @@ describe('Test de reportes',()=>{
         
     });
 
-     it('Debe existir por lo menos un caso',()=>{
-        cy.get('ion-card-header[id="agenda-{{i}}"]').should('exist')
+    it('Existe por lo menos 1 dato de reporte',()=>{
+        cy.get('ion-grid').within(()=>{
+            cy.get('ion-row').then(($rows)=>{
+                expect($rows.length).to.above(1)
+            })
+        })
     });
 
 });
