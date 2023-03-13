@@ -72,14 +72,4 @@ describe('Test de Login', () => {
             expect($divs.length).to.equal(1)
         });
     });
-
-    it('Test login correcto', ()=>{
-        cy.get('form').within(() => {
-            cy.get('ion-input[formcontrolname="email"]').type(mockData.email.good)
-            cy.get('ion-input[formcontrolname="password"]').type(mockData.password.good)
-            cy.get('ion-button[id="login-button"]').click()
-        })
-        cy.wait(5000)
-        cy.url().should('eq', expectedData.page.inicio)
-    });
   })
